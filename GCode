@@ -1,0 +1,21 @@
+;TEVO Tarantula start gcode
+G28; home XYZ
+G92 E0.0 ; reset extruder
+G1 X2 Y5 Z0 F2000.0 ; next few lines is a pre-print wipe movement that I use to build up nozzle pressure
+G1 X8.0 F2000
+G1 Y60.0 E4.0 F1000.0
+G1 Y140.0 E9.0 F1000.0
+G92 E0.0 ; reset again
+M117 "Layering..."
+
+;TEVO Tarantula finish gcode
+G1 E-10.0 F1000.0 ; retract a bit (this really helps with nozzle oozing and end and next time you start a print)
+M104 S0 ; turn off temperature
+M140 S0 ; turn off heatbed (commented out for my current workflow)
+G91; relative positioning
+G1 Z10 F2000; move Z 10 mm up
+G90; Absolute positioning
+G1 X20 Y150 F2000 ; move Y to front
+M84 ; disable steppers
+M107; Print-Fan off
+M85 S0; deactivate idle timeout

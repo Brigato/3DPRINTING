@@ -2,8 +2,7 @@
 G28 ; home printer
 M420 S1 ; activate bed leveling settings
 G92 E0.0 ; reset extruder
-G1 X5 Y5 Z0 F2000.0 ; next few lines is a pre-print wipe movement that I use to build up nozzle pressure
-G1 X1.0 F2000
+G1 X1 Y5 Z0 F2000.0 ; next few lines is a pre-print wipe movement that I use to build up nozzle pressure
 G1 Y60.0 E4.0 F1000.0
 G1 Y140.0 E9.0 F1000.0
 G92 E0.0 ; reset again

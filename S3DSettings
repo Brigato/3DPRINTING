@@ -34,7 +34,7 @@
 ;   startPointOriginY,0
 ;   sequentialIslands,0
 ;   spiralVaseMode,0
-;   firstLayerHeightPercentage,50
+;   firstLayerHeightPercentage,100
 ;   firstLayerWidthPercentage,100
 ;   firstLayerUnderspeed,0.2
 ;   useRaft,0

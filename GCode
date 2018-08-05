@@ -4,7 +4,7 @@ M420 S1 ; activate bed leveling settings
 G92 E0 ; reset extruder
 G1 X1 Y5 Z0 F2000 ; next few lines is a pre-print wipe movement that I use to build up nozzle pressure
 G1 Z10 F1002 ; lift Z 1 cm
-G1 E50 F600 ; squirt 50 mm filament
+G1 E50 F400 ; squirt 50 mm filament
 G1 Z0.1 F1002 ; lower Z 1 cm
 G1 Y60 E54 F1000
 G1 Y140 E59 F1000
